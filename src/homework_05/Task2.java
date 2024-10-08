@@ -39,7 +39,7 @@ public class Task2 {
         //Поддерживается работа с регулярными выражениями
         String replace3 = replaceMe.replaceAll("Ab", "E");
         System.out.println("replace1: " + replace1);
-        System.out.println("repöace2: " + replace2);
+        System.out.println("replace2: " + replace2);
         System.out.println("replace3: " + replace3);
 
         //replaceMe = "AbAbAbAc";

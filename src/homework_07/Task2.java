@@ -15,6 +15,12 @@ public class Task2 {
 
 
         int max = var1;
+        if (var2 > max) max = var2;
+        if (var3 > max) max = var3;
+        if (var4 > max) max = var4;
+
+        System.out.println("Максимум: " +  max);
+
 
     }
 }
