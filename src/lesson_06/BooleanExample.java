@@ -104,7 +104,56 @@ public class BooleanExample {
 
         System.out.println(" ==============\n");
 
-        //
+        // Логическое сокращенное И "&&"
+        // Выдает true только если обе части выражения равны true;
+        boolean b6 = true && false;
+        System.out.println("true && false: " + b6);
+        b6 = true && true;
+        System.out.println("true && true: " + b6);
+        b6 = (2 > 5) && (11 == 11);
+        System.out.println("(2 > 5) && (11 == 11): " + b6);
+
+        int a = 10;
+        int b = 0;
+
+        // Правая часть НЕ СЧИТАЕТСЯ / не выполняется, так как в левой части у нас false и значение переменной b7 не зависит от правой части выражения
+        boolean b7 = (b != 0) && (a / b > 2);
+        System.out.println("a / b > 2: " + b7);
+        // Логическое сокращенное ИЛИ "||"
+        // Выдает true если хотя бы одна часть выражения равна true
+        boolean b8 = true || (a / b > 2);
+        System.out.println("b8: " + b8);
+
+        System.out.println("==== Приоритет логических операци ====== \n");
+
+        /*
+        !
+        &
+        ^
+        |
+        &&
+        ||
+         */
+
+        System.out.println(true ^ true & false);
+        // 1. true & false
+        System.out.println(true ^ false);
+        // 2. true ^ false
+        System.out.println(true);
+
+        System.out.println();
+
+        System.out.println(true ^ true && false);
+        // 1. true ^ true
+        System.out.println(false && false);
+        // 2. false && false
+        System.out.println(false);
+
+        System.out.println(" ================= \n");
+
+        System.out.println(true | false | (25 < 100) & !true ^ (26 == 5) );
+
+        //  !  & ^ | && ||
 
 
     }
