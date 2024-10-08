@@ -24,4 +24,31 @@ public class Car {
         // this.model
         System.out.println("Hello from static method");
     }
+
+    public final int getPowerPS(){
+        return powerPS;
+    }
+    public void setPowerPS (int powerPS1){
+        this.powerPS = powerPS;
+    }
+
+    // final
+    public void test(final int number){
+        //
+        // number++;
+        int x = number + 10;
+        x++;
+    }
+
+    public void test(final int[] numbers){
+        //
+        //
+
+        //
+        int[] newNumbers = numbers;
+
+        //
+        numbers[0] = 100000;
+    }
+
 }
