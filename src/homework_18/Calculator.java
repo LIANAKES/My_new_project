@@ -15,7 +15,7 @@ public class Calculator {
 
     public static double divide(int a, int b) {
         if (b == 0) {
-            throw new IllegalArgumentException("Деление на ноль не допускается.");
+            return Integer.MIN_VALUE;
         }
         return (double) a / b;
     }
