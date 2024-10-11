@@ -12,4 +12,7 @@ public class Storage extends Component{
         return "Хранилище: " + super.toString() + " Емкость: " + capacity + " GB";
     }
 
+    public int getCapacity() {
+        return capacity;
+    }
 }

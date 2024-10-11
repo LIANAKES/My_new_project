@@ -13,6 +13,14 @@ public class Processor extends Component {
     public String toString() {
         return "Процессор: " + super.toString() + ", Ядра: " + cores + ", Частота: " + frequency + " GHz";
     }
+
+    public int getCores() {
+        return cores;
+    }
+
+    public double getFrequency() {
+        return frequency;
+    }
 }
 
 

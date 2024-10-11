@@ -30,5 +30,17 @@ public class Computer {
 
         computer.showSpecs();
     }
+
+    public Processor getProcessor() {
+        return processor;
+    }
+
+    public Memory getMemory() {
+        return memory;
+    }
+
+    public Storage getStorage() {
+        return storage;
+    }
 }
 

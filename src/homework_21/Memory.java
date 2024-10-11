@@ -8,7 +8,11 @@ public class Memory extends Component{
         this.capacity = capacity;
     }
 
-  public String toString() {
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public String toString() {
         return "Память: " + super.toString() + ", Емкость: " + capacity + " GB";
     }
 }
