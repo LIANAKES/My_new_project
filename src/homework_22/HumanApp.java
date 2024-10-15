@@ -8,7 +8,8 @@ public class HumanApp {
         AmateurAthleten amateur = new AmateurAthleten("Спортсмен-любитель");
         amateur.run();
 
-        ProAthleten pro = new ProAthleten("Спортсмен-профи");
+        ProAthlete pro = new ProAthlete("Спортсмен-профи");
         pro.run();
     }
+
 }

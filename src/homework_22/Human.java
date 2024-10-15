@@ -5,6 +5,13 @@ public class Human {
     protected int speed; // cкорость бежать
     protected int restTime; // время отдыха
 
+    public Human(String name) {
+        this.name = name;
+        this.speed = 10; // обычный человек бежит со скоростью 10 км/ч
+        this.restTime = 15; // отдыхает 15 минут
+
+    }
+
     public String getName() {
         return name;
     }
@@ -29,13 +36,7 @@ public class Human {
         this.restTime = restTime;
     }
 
-    public Human(String name) {
-        this.name = name;
-        this.speed = 10; // обычный человек бежит со скоростью 10 км/ч
-        this.restTime = 15; // отдыхает 15 минут
 
-
-    }
     public void run() {
         System.out.println(name + " бежит со скоростью " + speed + " км/ч.");
         restTime();
