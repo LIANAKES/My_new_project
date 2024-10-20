@@ -17,11 +17,9 @@ public class NumericPair <T extends Number, U extends Number> {
 
     public static void main(String[] args) {
 
-        NumericPair<Integer> intPair = new NumericPair<>(10, 20);
+        NumericPair<Integer, Double> intPair = new NumericPair<>(10, 5.5);
         System.out.println(intPair.sum());
 
-        NumericPair<Double> doublePair = new NumericPair<>(4.5, 8.5);
-        System.out.println(doublePair);
-    }
 
+    }
 }
