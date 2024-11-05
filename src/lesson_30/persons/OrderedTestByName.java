@@ -4,7 +4,7 @@ import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
-
+// Тесты будут выполняться по алфавитному порядку названий тестовых методов
 @TestMethodOrder(MethodOrderer.MethodName.class)
 public class OrderedTestByName {
     @Test
