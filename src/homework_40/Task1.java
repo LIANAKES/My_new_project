@@ -11,6 +11,7 @@ public class Task1 {
         // Удаляем все символы, кроме букв и пробелов
         String cleanedInput = input.replaceAll("[^a-zA-Z0-9а-яА-Я ]", " ");
 
+
         // Разбиваем строку на слова
         String[] wordsArray = cleanedInput.split(" ");
 
