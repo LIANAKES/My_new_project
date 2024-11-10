@@ -22,7 +22,7 @@ public class Task2 {
         Map<String, Integer> frequencyMap = new HashMap<>(); // карта хранит слова в качестве ключей и их частоту в качестве значений.
 
         // обрабатывает text для выделения отдельных слов
-        String[] words = text.trim().replaceAll("[^a-zа-яё0-9]", " ").split("\\s+");
+        String[] words = text.trim().replaceAll("[^a-zA-Za-яA-ё0-Я]", " ").split("\\s+");
 
         for (String word : words) {
             if (!word.isEmpty()) {
