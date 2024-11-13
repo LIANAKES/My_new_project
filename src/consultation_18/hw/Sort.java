@@ -1,14 +1,16 @@
-package сonsultation_18;
+package consultation_18.hw;
+
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.concurrent.Callable;
 
 public class Sort {
     public static void main(String[] args) {
         List<Integer> integers = new ArrayList<>(List.of(16, 25, 38, 42, 91, 1117 ));
 
-       Comparator<Integer> comparator = new Comparator<Integer>() {
+        Comparator<Integer> comparator = new Comparator<Integer>() {
 
             @Override
             public int compare(Integer i1, Integer i2) {
@@ -34,4 +36,3 @@ public class Sort {
 
     }
 }
-

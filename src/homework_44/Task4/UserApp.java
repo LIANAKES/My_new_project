@@ -8,14 +8,12 @@ import java.util.Optional;
 public class UserApp {
     public static void main(String[] args) {
         // Список пользователей
-        List<User> users = new ArrayList<>(
-                List.of(
+        List<User> users = new ArrayList<>(List.of(
                 new User(1, "Anna", 25),
                 new User(2, "Lew", 34),
                 new User(3, "Viktor",38)
 
-                )
-        );
+                ));
 
         //  Использования метода
         int searchId = 2;

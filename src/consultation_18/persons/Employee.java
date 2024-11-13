@@ -1,4 +1,4 @@
-package сonsultation_18.persons;
+package consultation_18.persons;
 
 public class Employee {
     private String name;

@@ -1,7 +1,8 @@
-package сonsultation_18;
-
+package consultation_18;
 import java.util.List;
 import java.util.stream.Stream;
+
+
 
 public class StreamOrderChange {
     public static void main(String[] args) {
@@ -23,7 +24,7 @@ public class StreamOrderChange {
     private static void task3() {
         List<String> strings = List.of("E1", "E22", "E3", "E2");
 
-       Stream<String> stream = strings.stream()
+        Stream<String> stream = strings.stream()
                 .filter(str -> {
                     System.out.println("filter: " + str);
                     return str.endsWith("2");
@@ -76,4 +77,5 @@ public class StreamOrderChange {
         boolean res = n > 2;
     }
 }
+
 

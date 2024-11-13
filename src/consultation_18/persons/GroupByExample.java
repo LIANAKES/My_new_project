@@ -1,4 +1,4 @@
-package сonsultation_18.persons;
+package consultation_18.persons;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -30,7 +30,7 @@ public class GroupByExample {
         // Получить списки сотрудников по отделам. Сгруппировать сотрудников по какому-то полю класса
         // Ключом будет название отдела - значением, список сотрудников из этого отдела.
         // (Список сотрудников, у которых поле department = этому ключу)
-       Map<String, List<Employee>> map = employees.stream()
+        Map<String, List<Employee>> map = employees.stream()
                 .collect(Collectors.groupingBy(Employee::getDepartment));
 
         System.out.println("Employee::getDepartment: ");
@@ -75,7 +75,7 @@ public class GroupByExample {
         System.out.println("список зарплат по отделу: " + map5);
 
         // Суммарная статистика
-       DoubleSummaryStatistics statistics = employees.stream()
+        DoubleSummaryStatistics statistics = employees.stream()
                 .collect(Collectors.summarizingDouble(Employee::getSalary));
 
         System.out.println("max: " + statistics.getMax());
@@ -94,16 +94,5 @@ public class GroupByExample {
         System.out.println(statistics1.getMin());
 
 
-
-
-
-
-
-
     }
-
-
-
-
 }
-
